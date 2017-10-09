@@ -60,3 +60,6 @@ gem 'bootstrap-sass'
 
 # Use jQuery for easier javascript
 gem 'jquery-rails'
+
+# Use Devise for authentication
+gem 'devise'
