@@ -11,7 +11,6 @@
 
       <div class="form-group">
         <%= "<em>(#{@minimum_password_length} characters minimum)</em>" if @validatable %>
-        <br />
         <%= f.password_field :password, class: 'form-control', placeholder: 'Password',  autocomplete: "off" %>
       </div>
 
