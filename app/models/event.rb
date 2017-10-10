@@ -1,12 +1,8 @@
 class Event < ApplicationRecord
-  validates :address, presence: true
-  validates :home_type, presence: true
-  validates :room_type, presence: true
-  validates :accommodate, presence: true
-  validates :bedroom_count, presence: true
-  validates :bathroom_count, presence: true
-  validates :listing_name, presence: true, length: { maximum: 50 }
-  validates :description, presence: true, length: { maximum: 500 }
-  
+  price (0)
+includes_food (false)
+includes_drinks (false)
+active (true)
+
  belongs_to :user
 end
