@@ -1,4 +1,5 @@
 class Event < ApplicationRecord
+   has_and_belongs_to_many :categories
 #   price (0)
 # includes_food (false)
 # includes_drinks (false)
