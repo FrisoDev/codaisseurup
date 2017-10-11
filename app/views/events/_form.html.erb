@@ -28,6 +28,7 @@
 <div class="form-group">
  <%= f.check_box :includes_food %> Food
 </div>
+
 <label>Categories</label>
 
 <%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) do |b| %>
