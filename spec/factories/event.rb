@@ -13,7 +13,7 @@ FactoryGirl.define do
     ends_at DateTime.now
     active true
     categories [swimming]
-    user { build(:user) })
+    user { build(:user) }
 
 
     trait :active do
@@ -24,6 +24,4 @@ FactoryGirl.define do
       active false
     end
   end
-  create :event, :active
-create :event, :inactive
 end
