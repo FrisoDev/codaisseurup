@@ -8,6 +8,7 @@ describe "Viewing an individual event" do
 
     expect(page).to have_text(event.name)
     expect(page).to have_text(event.description)
+    expect(page).to have_text(event.price)
 
   end
 end
