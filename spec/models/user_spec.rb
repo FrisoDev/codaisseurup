@@ -1,3 +1,5 @@
+require 'rails_helper'
+RSpec.describe User, type: :model do
 describe "association with event" do
   let(:user) { create :user }
   let!(:event) { create :event, user: user }
@@ -11,6 +13,7 @@ describe "association with event" do
   end
 
   it "deletes associated events" do
-    expect { user.destroy }.to change(event, :count).by(-1)
+    expect { user.destroy }.to change(Event, :count).by(-1)
   end
+end
 end
