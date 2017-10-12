@@ -9,8 +9,9 @@ validates :description, presence: true, length: {maximum: 500}
  def bargain?
     price < 30
   end
-  
+
   def self.order_by_price
     order :price
   end
+  has_many :photos, dependent: :destroy
 end
