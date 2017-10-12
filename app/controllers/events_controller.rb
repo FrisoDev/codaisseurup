@@ -35,7 +35,7 @@ class EventsController < ApplicationController
   end
 
   def show
-    @categories = @event.gategories
+    @categories = @event.categories
       @photos = @event.photos
   end
 
@@ -59,7 +59,7 @@ class EventsController < ApplicationController
       @event.photos.create(image: image)
     end
 
-    redirect_to edit_event_path(@room), notice: "Event successfully updated"
+    redirect_to edit_event_path(@event), notice: "Event successfully updated"
   else
     render :edit
   end
