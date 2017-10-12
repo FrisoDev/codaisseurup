@@ -2,3 +2,14 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+* {
+background-color: Maroon
+}
+* {
+  color: White
+}
+
+.panel-default > .panel_heading {
+  background-color: Green
+}
