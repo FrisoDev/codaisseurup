@@ -3,8 +3,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-* {
-background-color: White;
+// * {
+// background-color: White;
+// }
+
+
+body {
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
 }
 * {
   color: Black;
